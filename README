@@ -1,0 +1,32 @@
+Distter by Tyler Liddell
+V.1
+Student Number: 200022518
+
+INSTRUCTIONS FOR USING DISTTER
+
+Each implementation requires access to a posts.txt file to store and retrieve posts. The posts file must be stored in
+the directory you are running Distter from.
+
+To start Distter you simply run the Distter class.
+You must give a username after the class call.
+For Example: "java Distter MrBob" would start a Distter implementation with the username Mr. Bob.
+
+If you are the first one to join you become the server, if someone else is already running Distter you simply become
+their client, but then all interactions are the same.
+
+Distter only recognizes certain inputs, all other inputs are simply ignored.
+
+A hello message must be sent before Distter will recognize any of the other requests, type 'HELLO?' and Distter
+will add the username and the version to the message. The user can then use all the following commands:
+
+WHEN? (which has an automatice response of the time)
+
+POSTS? <time> <headerCount> (additional headers are any which are not author, time etc. and they are labeled with '#')
+#header                     (This has an automatic response of the options)
+#header
+
+FETCH? SHA-256 <post id> (To retrieve a particular post you use this command along with 'SHA-256 ' + the post's id)
+                         (The post will automatically be saved to your text file)
+
+GOODBYE! <optional> (You can then disconnect with an optional additional message)
+
